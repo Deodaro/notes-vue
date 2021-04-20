@@ -1,4 +1,3 @@
-// тк мы к ним обращаемся везде ниже
 @import "utils/vars";
 @import "utils/reset";
 
@@ -27,6 +26,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f7f7f7;
+  // background-color: #f8d600;
 }
 
 *, *:before, *:after { box-sizing: border-box; }
