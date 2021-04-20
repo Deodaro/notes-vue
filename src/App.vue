@@ -1,14 +1,12 @@
 <template>
-  <div class="wrapper">
-    <!-- смысл этого класса будет понятен при знакомстве с роутами -->
-    <div class="wrapper-content">
-      <div id="app">
-        <h1>Hello</h1>
-        <img alt="Vue logo" src="./assets/logo.png">
-      </div>
-    </div>
+<div class="wrapper">
+  <div class="wrapper-content">
     
+    <section>
+    </section>
+
   </div>
+</div>
 </template>
 
 <script>
