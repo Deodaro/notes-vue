@@ -1,14 +1,16 @@
 <template>
   <!-- new note -->
   <div class="new-note">
+    <label for="">Title</label>
     <input v-model="note.title" type="text">
+    <label for="">Description</label>
     <textarea v-model="note.descr"></textarea>
-    <button @click="addNote">New Note</button>
+    <button class="btn btnPrimary" @click="addNote">New Note</button>
   </div>
 </template>
 
 <!-- чтобы принять note в компоненте: -->
-<!-- чобъявляем пропс  -->
+<!-- объявляем пропс  -->
 <script>
 export default {
   props: {
@@ -30,6 +32,8 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss">
+  .new-note {
+    text-align: center;
+  }
 </style>
