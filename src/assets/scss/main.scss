@@ -33,6 +33,16 @@ body {
 
 h1, h2, h3, h4, h5, h6 { margin: 0; }
 
+// <extra
+h1 {
+  text-align: center;
+  color: $primary-color;
+  // font-size: 32px;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+// extra>
+
 input, textarea, select, button { border: 1px solid $border-base; }
 
 a {
@@ -76,10 +86,13 @@ section, .section {
 }
 
 .container {
-  width: 100%;
-  flex: 0 0 auto;
+  // width: 100%;
+  // flex: 0 0 auto;
   position: relative;
-  max-width: $desktopWidth;
+  // <extra
+  // max-width: $desktopWidth;
+  max-width: $smDesktopWidth;
+  // extra>
   margin: 0 auto;
   @media screen and (max-width: $smDesktopWidth) {
     max-width: $tableWidth;
@@ -90,6 +103,7 @@ section, .section {
   @media screen and (max-width: $phoneWidth) {
     max-width: $smPhoneWidth;
   }
+  
 }
 
 @import "./common.scss";

@@ -1,19 +1,26 @@
-# vue-cli
+# Notes
 
-## Project setup
+Приложение для создания заметок. В разработке.
+
+### Используемые технологии
+Vue.js
+
+### Установка и запуск
+
+#### Установка
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+#### Запуск в development mode
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Запуск в production mode
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Демо
+

@@ -5,6 +5,27 @@
     <input v-model="note.title" type="text">
     <label for="">Description</label>
     <textarea v-model="note.descr"></textarea>
+    <div class="priority-wrapper">
+      <div class="priority-item">
+        <p>Priority: </p>
+      </div>
+
+      <div class="priority-item">
+        <input type="radio" name="priority" value="normal" id="normal">
+        <label for="normal">Normal</label>
+        
+      </div>
+      <div class="priority-item">
+        <input type="radio" name="priority" value="high" id="high">
+        <label for="high">High</label>
+        
+      </div>
+      <div class="priority-item">
+        <input type="radio" name="priority" value="highest" id="highest">
+        <label for="highest">Highest</label>
+        
+      </div>    
+    </div>
     <button class="btn btnPrimary" @click="addNote">New Note</button>
   </div>
 </template>
@@ -35,5 +56,23 @@ export default {
 <style lang="scss">
   .new-note {
     text-align: center;
+  }
+  .priority-wrapper {
+    display: flex;
+    // justify-content: space-around;
+    justify-content: center;
+    margin-top: 1em;
+    font-size: 16px;
+    .priority-item {
+      display: flex;
+      align-items: center;
+      margin-right: 1em;
+      &:last-child {
+        margin-right: 0;
+      }
+      label {
+        margin-left: 2px;
+      }
+    }
   }
 </style>

@@ -3,7 +3,9 @@
     <div class="wrapper-content">
       
       <section>
-        <div class="containter">
+        <div class="container">
+          <!-- title -->
+          <h1>{{ title }}</h1> 
 
           <!-- показывается только тогда, когда значение data message - true -->
           <!-- если true, то вызываем значение massage -->
@@ -16,15 +18,14 @@
           <newNote :note="note" @addNote="addNote" />
 
           <div class="note-header">
-            <!-- title -->
-            <h1>{{ title }}</h1>
-
-            <p>{{ search }}</p>
+            
             <!-- search -->
             <search
               :value="search"
               placeholder="Find your note"
               @search="search = $event" />
+
+            <!-- <p>{{ search }}</p> -->
             
             <!-- icons controls -->
             <div class="icons">
@@ -65,7 +66,6 @@ export default {
         title: '',
         descr: ''
       },
-      // в будущем эти заметки будут храниться на сервере и подгружаться оттуда
       notes: [
         {
           title: 'First Note',
@@ -133,4 +133,34 @@ export default {
 </script>
 
 <style>
+
+/* дублирует note-header */
+/* .notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  p {
+    font-size: 22px;
+    color: #444ce0;
+  }
+  svg {
+    margin-right: 12px;
+    color: #999;
+    &.active {
+      color: #444ce0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &.full {
+    justify-content: center;
+    p {
+      margin-right: 16px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+} */
 </style>
